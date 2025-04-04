@@ -3,22 +3,7 @@ import xml.etree.ElementTree as ET
 
 # Lista com os links dos feeds RSS que você quer combinar
 feeds = [
-    "https://www.canalrural.com.br/feed/",
-    "https://newspulpaper.com/feed/",
-    "https://revistaoe.info/feed/",
-    "https://www.brasilmineral.com.br/rss.xml",
-    "https://g1.globo.com/rss/g1/",
-    "https://amanha.com.br/noticias?format=feed&type=rss",
-    "https://globorural.globo.com/rss/globorural",
-    "https://www.infomoney.com.br/feed/",
-    "https://www.nsctotal.com.br/feed",
-    "https://www.terra.com.br/rss.xml",
-    "https://www.cimm.com.br/portal/noticia/rss",
-    "https://petrosolgas.com.br/feed/",
-    "https://exame.com/feed",
-    "https://agenciabrasil.ebc.com.br/rss.xml",
-    "https://petronoticias.com.br/feed/",
-    "https://diariodocomercio.com.br/api/feeds/rss.xml",
+    "https://pncp.gov.br/app/editais?q=moderniza%C3%A7%C3%A3o%20de%20ilumina%C3%A7%C3%A3o&status=recebendo_proposta&pagina=1",
 ]
 
 # Função para coletar e combinar os feeds
