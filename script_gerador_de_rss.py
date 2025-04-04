@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 # Lista com os links dos feeds RSS que você quer combinar
 feeds = [
     "https://pncp.gov.br/app/editais?q=moderniza%C3%A7%C3%A3o%20de%20ilumina%C3%A7%C3%A3o&status=recebendo_proposta&pagina=1",
+    "https://www.gov.br/rss.xml"
 ]
 
 # Função para coletar e combinar os feeds
@@ -23,11 +24,11 @@ def combinar_feeds(feed_urls):
     return itens_combinados
 
 # Função para criar um novo feed RSS
-def criar_rss(itens, nome_arquivo="feed_combinado.xml"):
+def criar_rss(itens, nome_arquivo="feed_combinado2.xml"):
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
 
-    ET.SubElement(channel, "title").text = "Feed Combinado"
+    ET.SubElement(channel, "title").text = "Feed Combinado2"
     ET.SubElement(channel, "link").text = "https://marketing3mari.github.io/meu-feed-rss/"
     ET.SubElement(channel, "description").text = "Feed RSS combinado de várias fontes"
 
